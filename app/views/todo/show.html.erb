@@ -1,5 +1,8 @@
  <%= stylesheet_link_tag "show.css" %>
-<h3>Todo #<%= params[:id] %></h3>
+ 
+<div style="background-color: <%=@color%>;"  >
+
+ <h3>Todo #<%= params[:id] %></h3>
         <h2><span> How to clean my room</span></h2>
        <ul>
             <li><%= @todo_1 %><br></li>
@@ -22,3 +25,5 @@
         
         <h2><%= @todo_description %></h2>
 <h2>Todo#<%=params[:id]%></h2>
+</div>
+
