@@ -1,7 +1,7 @@
  <%= stylesheet_link_tag "show3.css" %>
  <div style="background-color: <%=@color%>;"  >
 
- <h1><span> How to complete my homework</span></h1>
+ <h1><span> <%=@title%></span></h1>
 <ul>
     <li>Get materials together<br></li>
     <br>
@@ -9,7 +9,7 @@
     <br>
     <li>Check all homework was completed<br></li>
 </ul>
-<img   src="https://www.sj-school.org/media/1/2/books.png" alt="homework" width="250" height="150" />
+<img   src=<%=@img%> alt="homework" width="250" height="150" />
     <a href="#"edit>
     <button style="background-color:white;corners:round; border-radius:10px">Edit</button>
     </a> 

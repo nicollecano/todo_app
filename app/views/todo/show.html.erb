@@ -3,7 +3,7 @@
 <div style="background-color: <%=@color%>;"  >
 
  <h3>Todo #<%= params[:id] %></h3>
-        <h2><span> How to clean my room</span></h2>
+        <h2><span> <%=@title%></span></h2>
        <ul>
             <li><%= @todo_1 %><br></li>
             
@@ -21,7 +21,7 @@
         <button style="background-color:white;corners:round; border-radius:10px">Go back</button>
         </a>
      
-        <img class="room-img" src="https://i.ytimg.com/vi/1SvrIyi3Xms/maxresdefault.jpg" alt="room" width="250" height="150" />
+        <img class="room-img" src=<%=@img%> alt="room" width="250" height="150" />
         
         <h2><%= @todo_description %></h2>
 <h2>Todo#<%=params[:id]%></h2>
