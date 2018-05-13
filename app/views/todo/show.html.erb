@@ -3,27 +3,15 @@
 <div style="background-color: <%=@color%>;"  >
 
  <h3>Todo #<%= params[:id] %></h3>
-        <h2><span> <%=@title%></span></h2>
-       <ul>
-            <li><%= @todo_1 %><br></li>
-            
-            <li><%= @todo_2 %><br></li>
-            
-            <li><%= @todo_3 %><br></li>
-        </ul>
-        <a href="#"edit>
-        <button style="background-color:white;corners:round; border-radius:10px">Edit</button>
-        </a> 
-        <a  href="#"delete>
-        <button style="background-color:white;corners:round; border-radius:10px">Delete</button> 
-        </a>
+        <h2><%= @todo_description %></h2>
+        <h2><span>  Pomodoro Estimate : <%=@todo_pomodoro_estimate%></span></h2>
+
+
         <a href="/todo/index">
         <button style="background-color:white;corners:round; border-radius:10px">Go back</button>
         </a>
      
-        <img class="room-img" src=<%=@img%> alt="room" width="250" height="150" />
-        
-        <h2><%= @todo_description %></h2>
-<h2>Todo#<%=params[:id]%></h2>
+<a href="/todo/edit/<%= @todo.id %>" class=“button edit-todo-button”>Edit</a>
+<a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
 </div>
 
